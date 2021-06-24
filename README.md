@@ -9,7 +9,7 @@ Installation
 - Add the following line in `~/.config/xplr/init.lua`
 
   ```lua
-  package.path = os.getenv("HOME") .. '/.config/xplr/plugins/?/init.lua'
+  package.path = os.getenv("HOME") .. '/.config/xplr/plugins/?/src/init.lua'
   ```
 
 - Clone the plugin
