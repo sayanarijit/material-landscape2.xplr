@@ -139,7 +139,9 @@ local function setup(args)
   xplr.config.general.panel_ui.default.borders = {}
   xplr.config.general.panel_ui.help_menu.style.bg = { Rgb = { 26, 26, 26 } }
 
-  if not args.keep_default_layout then
+  if args.keep_default_layout then
+    xplr.config.general.panel_ui.selection.style.bg = { Rgb = { 26, 26, 26 } }
+  else
     set_layout()
   end
 end
