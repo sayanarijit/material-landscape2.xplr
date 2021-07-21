@@ -3,8 +3,7 @@
 Installation
 ------------
 
-
-### Manually
+### Install Manually
 
 - Add the following line in `~/.config/xplr/init.lua`
 
@@ -24,4 +23,10 @@ Installation
 
   ```lua
   require("material-landscape2").setup()
+
+  # Or
+
+  require("material-landscape2").setup{
+    keep_default_layout = true
+  }
   ```
