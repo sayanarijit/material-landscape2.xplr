@@ -1,14 +1,18 @@
 [![imagecb16fe619f3c244e.png](https://s3.gifyu.com/images/imagecb16fe619f3c244e.png)](https://gifyu.com/image/58oh)
 
-Installation
-------------
+## Installation
 
 ### Install Manually
 
 - Add the following line in `~/.config/xplr/init.lua`
 
   ```lua
-  package.path = os.getenv("HOME") .. '/.config/xplr/plugins/?/src/init.lua'
+  local home = os.getenv("HOME")
+  package.path = home
+  .. "/.config/xplr/plugins/?/init.lua;"
+  .. home
+  .. "/.config/xplr/plugins/?.lua;"
+  .. package.path
   ```
 
 - Clone the plugin
